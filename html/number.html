@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number</title>
+    <link rel="stylesheet" href="../css/number.css">
+    <script src="../js/number.js" defer></script>
+</head>
+
+<body>
+    <div class="exit">Exit</div>
+    <!-- <a href="../html/homePage.html" class="exit"> Exit </a> -->
+    <header id="header"> Guess a number
+    </header>
+    <section id="levels">
+        <h2 class="h2Level"> בחר את רמת המשחק</h2>
+        <div>
+            <button class="btn btnlevel level1"> up to 100</button>
+            <button class="btn btnlevel level2"> up to 250</button>
+            <button class="btn btnlevel level3"> up to 500</button>
+        </div>
+    </section>
+    <section id="play" style="display:none;">
+        <div class="geussBox">
+            <input class="guessNum" type="text" placeholder="enter number" />
+            <img class="btnOk" src="../pictures/send.png">
+            <!-- <button class="btnOk" type="button"></button> -->
+        </div>
+        <div class="messageBox">
+            <p class="message"></p>
+        </div>
+        <div class="sumGuess"></div>
+    </section>
+    <div class="winMsg" style="display:none;"> !ניחשת נכון
+        <div class="btns">
+            <button class="btn btnPlayAgain"> שחק שוב </button>
+            <a href="./homePage.html">
+                <button class="btn btnExitGame"> חזור לדף הבית </button></a>
+        </div>
+    </div>
+    <div class="gameOverMsg" style="display: none;"> ...לא הצלחת הפעם
+        <div class="btns">
+            <button class="btn btnPlayAgain"> שחק שוב </button>
+            <a href="./homePage.html">
+                <button class="btn btnExitGame"> חזור לדף הבית </button></a>
+        </div>
+    </div>
+
+    <svg onclick="openNav()" class="openMenue" xmlns="../fonts/grip-lines-solid.svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 288zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z"/></svg>
+    <div class="contain">
+     <div class="wwww" style="display:none">
+         <img src="../pictures/logoNew.png" alt="">
+         <!-- <div class="logo"><img src="../pictures/logoNew.png" alt=""></div> -->
+         <div class="x">x</div>
+        
+         <p>
+            <div class="p">
+                <div class="h2"></span>  הוראות: </div><br>
+              בכניסה למשחק עליכם לבחור את
+               <br>רמת הקושי הרצויה ,
+               <br>וכעת המחשב הגריל מספר בין טווח המספרים שבחרתם, ועליכם לנסות לנחש את המספר.
+               יש לכם 10 נסיונות ניחוש בסה''כ.
+            
+            <br> <br> <br><div class="finish1"> מאחלים לכם הנאה רבה!!!<br><br> </div>
+              <div class="finish1">- myGame -</div>
+
+          </div>
+         </p>
+     </div>
+ </div>
+</body>
+
+</html>

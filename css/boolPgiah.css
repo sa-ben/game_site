@@ -1,0 +1,344 @@
+body {
+    min-height: 100%;
+    background-image: url(..//pictures/game_background.jpg);
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    
+}
+
+#header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: rgb(252, 156, 199); */
+    color: rgba(253, 75, 65, 0.899);
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 2px 3px rgb(125, 109, 109);
+    border-bottom: 2px solid rgba(253, 75, 65, 0.899);
+    /* border-radius: 100px; */
+}
+
+
+.exit {
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 89vh;
+    margin-left: 93vw;
+    position: fixed;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+
+.btnlevel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(159, 195, 249);
+    background-color: rgba(255, 255, 255, 0.135);
+    box-shadow: 10px 10px 20px rgba(3, 6, 8, 0.541);
+    border: rgba(253, 75, 65, 0.899) 2px solid;
+    color: rgba(253, 75, 65, 0.899);
+    font-size: 2rem;
+    border-radius: 35px;
+    width: 15vw;
+    height: 8vh;
+    margin: 1vw;
+    cursor: pointer;
+}
+.btnlevel:hover{
+    background-color: rgba(255, 255, 255, 0.094);
+}
+#levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levels div {
+    display: flex;
+    flex-direction: column;
+}
+
+.board {
+    width: 230px;
+    height: 50px;
+
+}
+
+#colors {
+    border-left: rgb(0, 110, 255) solid 3px;
+    margin-right: 0;
+    margin-left: 5VW;
+    width: 8vw;
+    display: grid;
+
+    grid-template-columns: auto auto;
+    box-shadow:
+        5 5 10px rgba(5, 5, 5, 0.6),
+        /* Inner shadow */
+        inset 5 5 10px rgba(255, 255, 255, 0.5);
+}
+
+.sColor,
+.cmpColor {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 180px;
+    border: white solid 2px;
+    box-shadow: 4px 10px 10px rgb(15, 6, 6);
+    margin: 1vw;
+}
+
+#chooseColors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chooseColors div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+
+.btnOk {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    height: 5vh;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: skyblue; */
+    padding: 3vh;
+}
+
+.gameBoard {
+    /* width: 50vw; */
+    display: none;
+    height: 90vh;
+    background-color: rgb(33, 31, 41);
+    border: rgb(0, 110, 255) solid 3px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 110, 255, 0.5);
+    /* display: flex; */
+    /* margin-left: 35vw; */
+    flex-direction: row-reverse;
+
+}
+
+.guessColors {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 2vh;
+}
+
+.marksLine {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 2vh;
+    padding-top: 5vh;
+}
+
+.guess {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 180px;
+    border: solid 2px rgba(255, 255, 255, 0.162);
+    margin: 2px;
+    box-shadow: 0px -6px 12px 0 #373737 inset,
+        0px 3px 3px 3px rgba(194, 194, 194, 0.5);
+    box-shadow: 0px -6px 12px 0 #373737 inset;
+    box-shadow: 0px -9px 15px 0 #373737 inset;
+    box-shadow: 0px -9px 15px 0 #37373773 inset;
+    /* 0px 3px 3px 3px rgba(194, 194, 194, 0.5) ; */
+    box-shadow:
+        5 5 10px rgba(5, 5, 5, 0.6),
+        /* Inner shadow */
+        inset 5 5 10px rgba(255, 255, 255, 0.5);
+}
+
+.guess2 {
+    border: solid 2px rgba(255, 255, 255, 0.733);
+}
+
+.mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 180px;
+    border: solid 1px rgba(255, 255, 255, 0.185);
+    margin: 1px;
+}
+
+#computerChoice {
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 10vw;
+    border-bottom: solid rgba(0, 110, 255, 0.5) 3px;
+    border-top: solid rgba(0, 110, 255, 0.5) 3px;
+}
+
+.cmpColor {
+    width: 4vh;
+    height: 4vh;
+    margin: 1vh;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    box-shadow: 2px 5px 5px rgb(15, 6, 6);
+}
+
+.winMsg {
+    display: none;
+    background-image: url(../pictures/balloons_7.png);
+    color: rgb(203, 188, 101);
+    color: rgb(194, 174, 62);
+    font-size: 7rem;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: bolder; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gameOverMsg {
+    background-image: url(../pictures/game-over.webp);
+    position: absolute;
+    background-size: cover;
+    width: 40vw;
+    height: 85vh;
+    border: 4px white solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(83, 77, 77, 0.804);
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btnPlayAgain,
+.btnExitGame {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(222, 92, 172);
+    box-shadow: 5px 5px 10px rgba(158, 180, 193, 0.541);
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 15px;
+    width: 15vw;
+    height: 8vh;
+    margin: 1vw;
+}
+
+.gameOverMsg .btn:hover {
+    background-color: rgba(222, 211, 53, 0.939);
+}
+
+.winMsg .btn {
+    background-color: rgb(206, 160, 89);
+    color: black;
+
+}
+
+.winMsg .btn:hover {
+    color: white;
+    background-color: rgb(226, 189, 137);
+    cursor: pointer;
+}
+
+.winMsg {
+    animation: 10s, ease-in-out 5s 3 normal forwards winAnimate;
+}
+
+.openMenue {
+    position: absolute;
+    /* position: relative; */
+    top: 12px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    fill: #e30001;
+    fill: rgba(253, 75, 65, 0.899);
+    cursor: pointer;
+}
+
+img {
+    width: 7vw;
+    padding-top: 2vh;
+}
+
+
+
+.h2 {
+    font-size: 2rem;
+}
+
+.wwww {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    background-color: #3500e325;
+    color: white;
+    /* gap: 2vh; */
+    position: fixed;
+    z-index: 105;
+    left: 0;
+    top: 0;
+    
+    /* padding: 2vw; */
+
+    width: 18vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.053);
+    align-items: center;
+    padding-right: 2vh;  padding-bottom: 4vh;
+}
+
+.p{
+    padding-top: 8vh;
+    font-size: 1rem;
+    /* padding: 2vw; */
+}
+.finish1{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+.x {
+    position: absolute;
+    padding-top: 0%;
+    padding-left: 15vw;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.205);
+    cursor: pointer;
+}
+
+.x:hover {
+    color: white;
+}

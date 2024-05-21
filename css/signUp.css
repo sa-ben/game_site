@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//pictures/game_background.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin: 5vh;
+    padding: 5vh;
+    position: relative;
+   
+ 
+
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+ 
+ 
+}
+
+.welcome {
+    /* margin-right: 7vw; */
+    padding: 10vh;
+}
+
+img {
+    width: 33vw;
+    /* animation: floating 0.7s ease-in-out 0 infinite normal;
+    animation: 5s ease-in-out 1s 2 normal forwards slide; */
+}
+
+.container {
+    margin: 3vh;
+    height: 85vh;
+    width: 32vw;
+    border: solid rgb(1, 90, 206, 0.793) 3px;
+    box-shadow: 10px 10px 10px rgba(0, 110, 255, 0.5);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.228);
+    position: relative;
+    top: 48vh;
+    /* top: 100vh; */
+    
+padding-bottom: 5vh;
+   /* position: fixed; */
+    
+}
+
+.details {
+    align-self: center;
+    color: white;
+    background: none;
+    font-size: 1vw;
+}
+
+input {
+    height: 7vh;
+    width: 25vw;
+    margin-bottom: 1.5vh;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.415);
+    background-color: rgba(255, 255, 255, 0.802);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn
+{
+    border-radius: 35px;
+    height: 7vh;
+    width: 15vw;
+    background-color: rgba(1, 90, 206, 0.793);
+    margin-top: 6vh;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding:0%;
+    left: 0%;
+    bottom: 0vh;
+}
+
+.tabSignUp,
+.tabLogIn 
+{
+    background-color:none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    height: 12vh;
+    padding: 0;
+    margin: 0;
+    width: 15.8vw;
+    text-shadow: black 0 3px 4px;
+    cursor: pointer;
+}
+
+.tabLogIn
+{
+    border-right: rgba(1, 90, 206, 0.793) solid 2px;
+    color: rgb(46, 114, 202);
+}
+
+.tabSignUp:hover,
+.tabLogIn:hover{
+    text-decoration: underline;
+    
+}
+
+.jump {
+    /*דיב של הטקסט והחץ ביחד*/
+    position: absolute;
+    /* top: 80vh;
+    right: 45vw; */
+    text-align: center;
+    animation: swinging 2s ease-in-out infinite;
+    left: 38vw;
+    cursor: pointer;
+    
+
+  }
+  
+.jump p {
+    /*הטקסט*/
+    color: rgb(255, 0, 119);
+    color: rgba(1, 90, 206, 0.793);
+    color: white;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+ 
+  }
+  
+.jump p svg {
+    /*החץ הקטן*/
+    fill: rgb(255, 0, 119);
+    /* fill: rgba(1, 90, 206, 0.793); */
+    fill: white;
+    animation: swinging 4s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+
+
+  @keyframes swinging {
+    /*אנימציית נדנוד לחץ שבפתיחה*/
+  
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+  
+    40%,
+    55%,
+    65% {
+      transform: rotate(6deg);
+    }
+  
+    50%,
+    60% {
+      transform: rotate(-6deg);
+    }
+  }

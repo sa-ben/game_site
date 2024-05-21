@@ -1,0 +1,156 @@
+body {
+    width: 100%;
+    display: flex;
+    background-image: url(..//pictures/game_background.jpg);
+    background-size: contain;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    padding: 0;
+}
+.exit {
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 88vh;
+    margin-left: 92vw;
+    position: fixed;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5vw;
+    /* position: absolute; */
+    
+        /* position: absolute;
+        top: 20vh;
+        left: 0vw;
+        height: 5vh; */
+        /* transform: rotate(90deg); */
+        color: white;
+    
+}
+.exit p svg {
+    /*החץ הקטן*/
+    fill: rgb(255, 0, 119);
+    /* fill: rgba(1, 90, 206, 0.793); */
+    fill: white;
+    animation: swinging 4s ease-in-out infinite;
+    animation-delay: 2s;
+    transform: rotate(90deg)
+  }
+header {
+    width: 100vw;
+    color: white;
+    padding-top: 0%;
+    background-color: rgb(206, 1, 73);
+    background-color: rgb(207, 16, 83);
+    background-color: rgba(35, 113, 214, 0.793);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    height: 15vh;
+    margin: 0;
+    font-size: larger;
+}
+
+img {
+    height: 9vh;
+
+}
+
+.welcome {
+    font-size: 5vh;
+}
+
+.countWinLose {
+    font-size: smaller;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5vw;
+    margin-left: 5vw;
+}
+
+.gameBox {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.gameBox p {
+    text-align: left;
+    font-size: 2.6rem;
+    text-shadow: #666 0 2px 4px;
+    text-shadow: white 1px 0.5px 1px;
+    color: white;
+    color: rgb(227, 37, 104);
+    color: rgba(35, 113, 214, 0.793);
+    margin: 0;
+}
+
+.game,
+.UCgame {
+    display: none;
+    height: 35vh;
+    width: 35vw;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.UCgame {
+    cursor: not-allowed;
+}
+
+.imgPlayNow {
+    display: none;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.imgUcstrt {
+    display: none;
+    width: 35vw;
+    height: 35vh;
+    border-radius: 10px;
+    /* transform: rotateX(180deg); */
+}
+
+.game:hover {
+    transform: scale(1.03);
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+
+.game:hover .imgPlayNow {
+    display: block;
+    transform: scale(0.8);
+    transition-duration: 0.5ms;
+}
+
+.UCgame:hover {
+    opacity: 90%;
+    transform: scale(1.03);
+    /* transform: rotateX(180deg); */
+    transition-duration: 0.7s;
+    cursor: not-allowed;
+}
+
+.UCgame:hover .imgUcstrt {
+    display: block;
+    /* transform: rotateX(180deg); */
+    /* transition-duration: 0.5ms; */
+}

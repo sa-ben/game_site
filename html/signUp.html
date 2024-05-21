@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGame - Sign up</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+    <script defer src="../js/signUp.js"></script>
+</head>
+
+<body>
+    <div class="welcome">
+        <img src="../pictures/logoNew.png" alt="">
+        <h1> Welcome to MyGame! </h1>
+        <div class="jump">
+            <!-- <p>למעבר לדף המשחקים</p> -->
+            <p>- enter myGame -</p>
+
+            <p><svg xmlns="../fonts/arrow-down-solid.svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="details dLogIn" >
+            <form  class="formLogIn">
+                <h1>Log In</h1>
+                <input class="name_inp" type="text" placeholder="name" required>
+                <input class="pass_inp" type="password" placeholder="password" required>
+                <button class="btn btnL"> Start </button>
+            </form>
+        </div>
+
+        <div class="details dSignUp" style="display: none;">
+            <form  class="formSignUp" >
+                <h1>Sign Up</h1>
+                <input class="name" type="text" placeholder="Enter your name" required>
+                <input class="email" type="email" placeholder="Enter your Email">
+                <input class="pass" type="password" placeholder=" Enter your password" required>
+                <input class="validPass" type="password" placeholder="Enter password again" required>
+                <button class="btn btnS"> Start </button>
+            </form>
+        </div>
+        <div class="tabs">
+            <div class="tabLogIn"> log in</div>
+            <div class="tabSignUp"> sign up</div>
+        </div>
+    </div>
+</body>
+
+</html>

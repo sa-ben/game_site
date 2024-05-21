@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+body {
+    background-image: url(../pictures/game_background.jpg);
+
+
+    background-repeat: unset;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: rgb(61, 90, 249);
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 1px 2px rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(61, 90, 249);
+}
+
+
+.exit {
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 88vh;
+    margin-left: 92vw;
+    position: fixed;
+    cursor: pointer;
+}
+
+.h2Level {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+#levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levels div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: row;
+    background-color: rgba(253, 54, 54, 0.892);
+    box-shadow: 5px 5px 10px rgb(96, 89, 89);
+    /* color: white; */
+    font-size: larger;
+    border: none;
+    border-radius: 15px;
+    width: 15vw;
+    height: 8vh;
+    margin: 1vw;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btnlevel:hover,
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(149, 20, 20, 0.797);
+
+}
+
+.geussBox,
+.messageBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.guessNum {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(143, 243, 124, 0.71);
+    border-radius: 35px;
+    width: 25vw;
+    height: 10vh;
+    font-size: 2rem;
+    color: white;
+}
+
+.message {
+    color: white;
+    font-size: larger;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 7vh;
+    font-size: 5vh;
+    border-bottom: white solid 3px;
+    border-top: white solid 3px;
+}
+
+.btnOk {
+    width: 6vw;
+    height: 11vh;
+    /* background-image: url(../pictures/send.png); */
+    background-size: cover;
+    border-radius: 100px;
+    /* background-color: none; */
+}
+
+.btnOk:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.sumGuess {
+    margin-right: 5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.winMsg,
+.gameOverMsg {
+    background-image: url(../pictures/stars2.png);
+    color: rgb(203, 188, 101);
+    font-size: 4rem;
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 29vw;
+    margin-top: 17vh;
+}
+
+.gameOverMsg {
+    background-image: url(../pictures/gameOver2.png);
+    width: 60vw;
+    height: 60vh;
+    margin-left: 19vw;
+    margin-top: 25vh;
+
+}
+
+.x {
+    position: absolute;
+    padding-top: 0%;
+    padding-left: 15vw;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.205);
+    cursor: pointer;
+}
+
+.x:hover {
+    color: white;
+}
+.p{
+    padding-top: 8vh;
+    font-size: 1.1rem;
+    /* padding: 2vw; */
+}
+.finish1{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.openMenue {
+    position: absolute;
+    /* position: relative; */
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    fill: rgb(61, 90, 249);
+    cursor: pointer;
+}
+
+img {
+    width: 7vw;
+    padding-top: 2vh;
+}
+
+
+.h2 {
+    font-size: 2rem;
+}
+
+.wwww {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    background-color: #3500e325;
+    color: white;
+    gap: 2vh;
+    position: fixed;
+    z-index: 105;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    padding-right: 1vw;
+    width: 18vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.053);
+    align-items: center;
+}
